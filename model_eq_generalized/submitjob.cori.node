@@ -1,0 +1,8 @@
+#!/bin/bash -l
+module load python
+module load gcc
+source activate /global/common/software/atom/cori/cesol_conda/v0.13b
+
+ips.py --simulation=fastran_modeleq.config --platform=cori_haswell_node.conf --log=ips.log 1> ips.out 2> ips.err &
+
+conda deactivate
