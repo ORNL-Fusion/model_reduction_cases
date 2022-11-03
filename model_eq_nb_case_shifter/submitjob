@@ -19,7 +19,7 @@
 
 #SBATCH -C haswell
 
-#SBATCH --image=docker:registry.services.nersc.gov/rwp53/ips-massive-serial:latest
+#SBATCH --image=docker:registry.services.nersc.gov/rwp53/ips-massive-serial:dev
 #SBATCH --volume="/global/cscratch1/sd/markcian/tmpfiles:/tmp:perNodeCache=size=1G"
 
 module load gcc
