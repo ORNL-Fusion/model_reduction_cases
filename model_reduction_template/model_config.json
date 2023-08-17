@@ -1,0 +1,10 @@
+{
+	"inputs" : [
+            {"name" : "r",    "upper_range" : 4.7,  "lower_range" : 3.3 },
+            {"name" : "pinj", "upper_range" : 50.0, "lower_range" : 20.0}
+	],
+	"outputs" : [
+            {"name" : "fbs",  "upper_range" : 1.0,    "lower_range" : 0.0},
+            {"name" : "pfus", "upper_range" : 1000.0, "lower_range" : 0.0}
+	]
+}
