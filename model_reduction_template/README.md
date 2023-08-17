@@ -78,8 +78,8 @@ manifest = [
 This workflow converts the between model training workflow and the data generation workflow.
 
 ### Input files
-* `ips.massive_parallel_runner.config` The massive para
-* `current_msr_state.zip`
+* `ips.massive_parallel_runner.config` The massive parallel runner config file.
+* `current_msr_state.zip` The massive parallel runner state file.
 
 #### `current_msr_state.zip`
 The state file for data generation workflow.
