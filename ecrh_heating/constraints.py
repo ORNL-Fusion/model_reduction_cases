@@ -42,7 +42,7 @@ manifest = [
     {'function' : ec_phai_limits,  'args' : ['ec_phai' ] },
     {'function' : ec_theta_limits, 'args' : ['ec_theta'] },
     {'function' : r_limits,        'args' : ['r'       ] },
-    {'function' : bt_limits,       'args' : ['bt'      ] }
+    {'function' : bt_limits,       'args' : ['bt'      ] },
     {'function' : ip_limits,       'args' : ['ip'      ] },
     {'function' : h98_limits,      'args' : ['h98'     ] },
     {'function' : pinj_limits,     'args' : ['pinj'    ] },
