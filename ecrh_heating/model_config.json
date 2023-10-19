@@ -8,7 +8,7 @@
         {"name" : "bt",       "lower_range" : 4.0,    "upper_range" : 10.0   },
         {"name" : "ip",       "lower_range" : 6.5,    "upper_range" : 15.0   },
         {"name" : "h98",      "lower_range" : 0.9,    "upper_range" : 1.5    },
-        {"name" : "pinj",     "lower_range" : 50.0,   "upper_range" : 150.0  },
+        {"name" : "pinj",     "lower_range" : 0.0,    "upper_range" : 150.0  },
         {"name" : "kappa",    "lower_range" : 1.25,   "upper_range" : 2.75   },
         {"name" : "nepeak",   "lower_range" : 1.3,    "upper_range" : 2.2    },
         {"name" : "aratio",   "lower_range" : 3.0,    "upper_range" : 4.0    }

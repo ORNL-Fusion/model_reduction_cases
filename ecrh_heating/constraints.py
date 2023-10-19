@@ -25,7 +25,7 @@ def h98_limits(h98):
     return tensorflow.math.logical_and(h98 >= 0.9, h98 <= 1.5)
 
 def pinj_limits(pinj):
-    return tensorflow.math.logical_and(pinj >= 50.0, pinj <= 150.0)
+    return tensorflow.math.logical_and(pinj >= 0.0, pinj <= 150.0)
 
 def kappa_limits(kappa):
     return tensorflow.math.logical_and(kappa >= 1.25, kappa <= 2.75)
