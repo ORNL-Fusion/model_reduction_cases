@@ -27,7 +27,6 @@ cd $SCRATCH/$WORK_DIRECTORY
 
 conda activate /global/common/software/atom/perlmutter/adaptive/conda
 
-export PYTHONPATH=/global/common/software/atom/perlmutter/cesol/conda/hotfix:$PYTHONPATH
 export SHOT_NUMBER=000001
 
 ips.py --platform=platform.conf --simulation=ips.ml_train.config
