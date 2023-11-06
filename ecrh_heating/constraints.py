@@ -36,6 +36,30 @@ def nepeak_limits(nepeak):
 def aratio_limits(aratio):
     return tensorflow.math.logical_and(aratio >= 3.0, aratio <= 4.0)
 
+def fbs_limits(fbs):
+    return tensorflow.math.logical_and(fbs >= 0.0, fbs <= 1.0)
+
+def pfus_limits(pfus):
+    return tensorflow.math.logical_and(pfus >= 0.0, pfus <= 1000.0)
+
+def q95_limits(q95):
+    return tensorflow.math.logical_and(q95 >= 0.0, q95 <= 20.0)
+
+def li_limits(li):
+    return tensorflow.math.logical_and(li >= 0.74, li <= 1.3)
+
+def betap_limits(betap):
+    return tensorflow.math.logical_and(betap >= 0.0, betap <= 6.0)
+
+def betat_limits(betat):
+    return tensorflow.math.logical_and(betat >= 1.5, betat <= 15.0)
+
+def nebar_limits(nebar):
+    return tensorflow.math.logical_and(nebar >= 15.0, nebar <= 255.0)
+
+def nebar_limits(betan):
+    return tensorflow.math.logical_and(betan >= 2.2, betan <= 3.75)
+
 manifest = [
     {'function' : ec_freg_limits,  'args' : ['ec_freq' ] },
     {'function' : ec_thet_limits,  'args' : ['ec_thet' ] },
@@ -48,5 +72,13 @@ manifest = [
     {'function' : pinj_limits,     'args' : ['pinj'    ] },
     {'function' : kappa_limits,    'args' : ['kappa'   ] },
     {'function' : nepeak_limits,   'args' : ['nepeak'  ] },
-    {'function' : aratio_limits,   'args' : ['aratio'  ] }
+    {'function' : aratio_limits,   'args' : ['aratio'  ] },
+    {'function' : fbs_limits,      'args' : ['fbs'     ] },
+    {'function' : pfus_limits,     'args' : ['pfus'    ] },
+    {'function' : q95_limits,      'args' : ['q95'     ] },
+    {'function' : li_limits,       'args' : ['li'      ] },
+    {'function' : betap_limits,    'args' : ['betap'   ] },
+    {'function' : betat_limits,    'args' : ['betat'   ] },
+    {'function' : nebar_limits,    'args' : ['nebar'   ] },
+    {'function' : betan_limits,    'args' : ['betan'   ] }
 ]
