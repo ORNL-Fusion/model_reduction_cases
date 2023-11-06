@@ -57,7 +57,7 @@ def betat_limits(betat):
 def nebar_limits(nebar):
     return tensorflow.math.logical_and(nebar >= 15.0, nebar <= 255.0)
 
-def nebar_limits(betan):
+def betan_limits(betan):
     return tensorflow.math.logical_and(betan >= 2.2, betan <= 3.75)
 
 manifest = [
