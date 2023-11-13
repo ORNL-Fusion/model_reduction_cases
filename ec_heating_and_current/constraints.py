@@ -25,7 +25,7 @@ def h98_limits(h98):
     return tensorflow.math.logical_and(h98 >= 0.9, h98 <= 1.5)
 
 def ec_pinj_limits(ec_pinj):
-    return tensorflow.math.logical_and(pinj >= 50.0, pinj <= 150.0)
+    return tensorflow.math.logical_and(ec_pinj >= 50.0, ec_pinj <= 150.0)
 
 def kappa_limits(kappa):
     return tensorflow.math.logical_and(kappa >= 1.25, kappa <= 2.75)
@@ -37,10 +37,10 @@ def aratio_limits(aratio):
     return tensorflow.math.logical_and(aratio >= 3.0, aratio <= 4.0)
 
 def irf_limits(irf):
-    return tensorflow.math.logical_and(fbs >= 0.0, fbs <= 15.0)
+    return tensorflow.math.logical_and(irf >= 0.0, irf <= 15.0)
 
 def prfe_limits(prfe):
-    return tensorflow.math.logical_and(pfus >= 0.0, pfus <= 150.0)
+    return tensorflow.math.logical_and(prfe >= 0.0, prfe <= 150.0)
 
 manifest = [
     {'function' : ec_freg_limits,  'args' : ['ec_freq' ] },
