@@ -14,7 +14,7 @@
         {"name" : "aratio",   "lower_range" : 3.0,    "upper_range" : 4.0    }
     ],
     "outputs" : [
-        {"name" : "irf",   "upper_range" : 15.0,   "lower_range" : 0.0 }
+        {"name" : "irf",   "upper_range" : 15.0,   "lower_range" : 0.0 },
         {"name" : "prfe",  "upper_range" : 150.0,  "lower_range" : 0.0 }
     ]
 }
