@@ -1,0 +1,17 @@
+  {
+    "variable": {
+        "r"      : ["eped_input" , "r"      , "input" ],
+        "a"      : ["eped_input" , "a"      , "input" ],
+        "bt"     : ["eped_input" , "b0"     , "input" ],
+        "ip"     : ["eped_input" , "ip"     , "input" ],
+        "betan"  : ["eped_input" , "betan"  , "input" ],
+        "ne_ped" : ["eped_input" , "neped"  , "input" ],
+        "kappa"  : ["eped_input" , "kappa"  , "input" ],
+        "delta"  : ["eped_input" , "delta"  , "input" ],
+        "zeff"   : ["eped_input" , "zeffped", "input" ]
+    },
+    "const": {
+    },
+    "model": {
+    }
+  }
