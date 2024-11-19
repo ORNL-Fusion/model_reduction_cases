@@ -1,0 +1,28 @@
+distributed.scheduler - INFO - -----------------------------------------------
+distributed.http.proxy - INFO - To route to workers diagnostics web server please install jupyter-server-proxy: python -m pip install jupyter-server-proxy
+distributed.scheduler - INFO - -----------------------------------------------
+distributed.scheduler - INFO - Clear task state
+distributed.scheduler - INFO -   Scheduler at: tcp://128.55.71.176:42405
+distributed.scheduler - INFO -   dashboard at:                     :8787
+distributed.scheduler - INFO - Receive client connection: Client-96f77ce4-49cb-11ef-bce1-0040a686d3ab
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Register worker <Worker 'tcp://128.55.71.176:40893', name: tcp://128.55.71.176:40893, memory: 0, processing: 128>
+distributed.scheduler - INFO - Starting worker compute stream, tcp://128.55.71.176:40893
+distributed.core - INFO - Starting established connection
+distributed.scheduler - INFO - Scheduler closing...
+distributed.scheduler - INFO - Remove worker <Worker 'tcp://128.55.71.176:40893', name: tcp://128.55.71.176:40893, memory: 128, processing: 0>
+distributed.core - INFO - Removing comms to tcp://128.55.71.176:40893
+distributed.scheduler - INFO - Lost all workers
+distributed.scheduler - INFO - Scheduler closing all comms
+distributed.scheduler - INFO - End scheduler at 'tcp://128.55.71.176:42405'
+/global/common/software/atom/perlmutter/adaptive/conda/lib/python3.8/site-packages/distributed/client.py:1129: VersionMismatchWarning: Mismatched versions found
+
++---------+--------+-----------+---------+
+| Package | client | scheduler | workers |
++---------+--------+-----------+---------+
+| msgpack | 1.0.8  | 1.0.4     | None    |
+| toolz   | 0.12.1 | 0.12.0    | None    |
++---------+--------+-----------+---------+
+Notes: 
+-  msgpack: Variation is ok, as long as everything is above 0.6
+  warnings.warn(version_module.VersionMismatchWarning(msg[0]["warning"]))
