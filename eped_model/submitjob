@@ -19,7 +19,7 @@
 #SBATCH --image=registry.services.nersc.gov/parkjm/ips-fastran:latest
 #SBATCH --volume="/global/cscratch1/sd/rwp/tmpfiles:/tmp:perNodeCache=size=10G"
 
-WORK_DIRECTORY=eped_model
+WORK_DIRECTORY=eped_model4
 
 rm -rf $SCRATCH/$WORK_DIRECTORY
 mkdir $SCRATCH/$WORK_DIRECTORY
