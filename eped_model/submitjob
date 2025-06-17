@@ -8,6 +8,7 @@
 #SBATCH --account=atom
 
 #SBATCH --nodes=1
+##SBATCH -t 00:02:00
 ##SBATCH -t 00:30:00
 #SBATCH -t 24:00:00
 #SBATCH -C cpu
@@ -19,7 +20,7 @@
 #SBATCH --image=registry.services.nersc.gov/parkjm/ips-fastran:latest
 #SBATCH --volume="/global/cscratch1/sd/rwp/tmpfiles:/tmp:perNodeCache=size=10G"
 
-WORK_DIRECTORY=eped_model4
+WORK_DIRECTORY=eped_model6
 
 rm -rf $SCRATCH/$WORK_DIRECTORY
 mkdir $SCRATCH/$WORK_DIRECTORY
