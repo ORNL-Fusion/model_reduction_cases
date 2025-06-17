@@ -1,0 +1,36 @@
+{
+  "scan": {
+    "delta"   : {"type": "range", "ymin":0.198, "ymax":0.4}
+  },
+
+  "const": {
+    "betan"   : 1.851,
+    "nesep"   : 3.0,
+    "ip"      : 1.487,
+    "bt"      : 2.0988,
+    "r"       : 1.6954,
+    "a"       : 0.5788,
+    "neped"   : 5.8760,
+    "kappa"   : 1.807,
+    "a"       : 0.5788,
+    "zeffped" : 1.603
+  },
+
+ "io": {
+    "index"   : ["eped_driver", "TIMEID"  ],
+
+    "r"       : ["eped_driver", "R"       ],
+    "a"       : ["eped_driver", "A"       ],
+    "kappa"   : ["eped_driver", "KAPPA"   ],
+    "delta"   : ["eped_driver", "DELTA"   ],
+
+    "bt"      : ["eped_driver", "BT"      ],
+    "ip"      : ["eped_driver", "IP"      ],
+
+    "neped"   : ["eped_driver", "NEPED"   ],
+    "nesep"   : ["eped_driver", "NESEP"   ],
+
+    "zeffped" : ["eped_driver", "ZEFFPED" ],
+    "betan"   : ["eped_driver", "BETAN"   ]  
+  }
+}

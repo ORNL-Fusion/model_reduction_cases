@@ -1,0 +1,43 @@
+
+{
+    "variable": {
+        "r"        : ["instate" , "r0"        , "input" ],
+        "a"        : ["instate" , "a0"        , "input" ],
+        "bt"       : ["instate" , "b0"        , "input" ],
+        "ip"       : ["instate" , "ip"        , "input" ],
+        "q95"      : ["aeqdsk"  , "q95"       , "output"],
+        "li"       : ["aeqdsk"  , "li"        , "output"],
+        "betap"    : ["aeqdsk"  , "betap"     , "output"],
+        "betat"    : ["aeqdsk"  , "betat"     , "output"],
+        "ne_ped"   : ["instate" , "ne_ped"    , "input" ],
+        "ne_axis"  : ["instate" , "ne_axis"   , "input" ],
+        "nebar"    : ["fastran" , "nebar"     , "output"],
+        "h98"      : ["instate" , "h98_target", "input" ],
+        "betan"    : ["fastran" , "betan"     , "output"],
+        "pfuse"    : ["fastran" , "pfuse"     , "output"],
+        "pfusi"    : ["fastran" , "pfusi"     , "output"],
+        "prfe"     : ["fastran" , "prfe"      , "output"],
+        "prfi"     : ["fastran" , "prfi"      , "output"],
+        "pnbe"     : ["fastran" , "pnbe"      , "output"],
+        "pnbi"     : ["fastran" , "pnbi"      , "output"],
+        "ibs"      : ["fastran" , "ibs"       , "output"],
+        "ec_freq"  : ["instate" , "freq_0"    , "input" ],
+        "ec_thet"  : ["instate" , "thet_0"    , "input" ],
+        "ec_phai"  : ["instate" , "phai_0"    , "input" ],
+        "ec_theta" : ["instate" , "theta_0"   , "input" ],
+	"ec_pinj"  : ["instate" , "pinj_0"    , "input" ],
+        "te_ped"   : ["instate" , "te_ped"    , "input" ],
+        "kappa"    : ["instate" , "kappa"     , "input" ],
+        "irf"      : ["fastran" , "irf"       , "output"]
+    },
+    "model": {
+        "aratio"    : ["expr", "r / a" ],
+        "pfus"      : ["expr", "5.0 * ( pfuse + pfusi )"],
+        "betan_ped" : ["expr", "0.8048 * a * ne_ped * te_ped / ( ip * bt )"],
+        "ngw"       : ["base", {}],
+        "fgw_ped"   : ["expr", "ne_ped / ngw"],
+        "nepeak"    : ["expr", "ne_axis / ne_ped"],
+        "fbs"       : ["expr", "ibs / ip"],
+        "pinj"      : ["expr", "pnbe + pnbi + prfe + prfi"]
+    }
+}
