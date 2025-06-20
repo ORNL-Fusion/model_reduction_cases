@@ -27,6 +27,7 @@ mkdir $SCRATCH/$WORK_DIRECTORY
 cp -rd * $SCRATCH/$WORK_DIRECTORY
 cd $SCRATCH/$WORK_DIRECTORY
 
+module load conda
 conda activate /global/common/software/atom/perlmutter/adaptive/conda
 
 export SHOT_NUMBER=000001
