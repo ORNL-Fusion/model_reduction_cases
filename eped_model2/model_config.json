@@ -1,13 +1,14 @@
 {
     "inputs" : [
-        {"name" : "ip",    "lower_range" : 5.0, "upper_range" : 10.0 },
-        {"name" : "bt",    "lower_range" : 5.0, "upper_range" : 15.0 },
-        {"name" : "r",     "lower_range" : 3.0, "upper_range" : 4.5  },
-        {"name" : "a",     "lower_range" : 0.6, "upper_range" : 2.8  },
-        {"name" : "kappa", "lower_range" : 1.7, "upper_range" : 2.0  },
-        {"name" : "delta", "lower_range" : 0.3, "upper_range" : 0.7  },
-        {"name" : "neped", "lower_range" : 9.0, "upper_range" : 15.0 },
-        {"name" : "zeff",  "lower_range" : 1.5, "upper_range" : 2.5  }
+        {"name" : "ip",      "lower_range" : 0.518, "upper_range" : 1.96  },
+        {"name" : "bt",      "lower_range" : 0.978, "upper_range" : 2.165 },
+        {"name" : "r",       "lower_range" : 1.651, "upper_range" : 1.743 },
+        {"name" : "a",       "lower_range" : 0.527, "upper_range" : 0.611 },
+        {"name" : "kappa",   "lower_range" : 1.996, "upper_range" : 1.451 },
+        {"name" : "delta",   "lower_range" : 0.068, "upper_range" : 0.726 },
+        {"name" : "neped",   "lower_range" : 1.227, "upper_range" : 8.977 },
+        {"name" : "zeffped", "lower_range" : 1.08,  "upper_range" : 4.37  },
+        {"name" : "betan",   "lower_range" : 0.88,  "upper_range" : 3.82  }
     ],
     "outputs" : [
         {"name" : "pped", "lower_range" : 0.0,  "upper_range" : 500.0 },
