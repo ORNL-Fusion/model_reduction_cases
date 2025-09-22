@@ -4,7 +4,7 @@
         {"name" : "bt",      "lower_range" : 0.978, "upper_range" : 2.165 },
         {"name" : "r",       "lower_range" : 1.651, "upper_range" : 1.743 },
         {"name" : "a",       "lower_range" : 0.527, "upper_range" : 0.611 },
-        {"name" : "kappa",   "lower_range" : 1.996, "upper_range" : 1.451 },
+        {"name" : "kappa",   "lower_range" : 1451,  "upper_range" : 1.996 },
         {"name" : "delta",   "lower_range" : 0.068, "upper_range" : 0.726 },
         {"name" : "neped",   "lower_range" : 1.227, "upper_range" : 8.977 },
         {"name" : "zeffped", "lower_range" : 1.08,  "upper_range" : 4.37  },
